@@ -34,7 +34,7 @@ class BlockLogger
   end
 
   def trace(msg, **kwargs)
-    if Logger.trace?(name)
+    if self.class.trace?(name)
       @logger.info "TRACE #{msg}#{serialize_kwargs(kwargs)}"
     end
   end
