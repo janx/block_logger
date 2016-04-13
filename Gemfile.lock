@@ -1,0 +1,29 @@
+PATH
+  remote: .
+  specs:
+    block_logger (0.1.0)
+      logging (~> 2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    little-plugger (1.1.4)
+    logging (2.1.0)
+      little-plugger (~> 1.1)
+      multi_json (~> 1.10)
+    minitest (5.8.3)
+    multi_json (1.11.2)
+    rake (10.5.0)
+    yard (0.8.7.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  block_logger!
+  minitest (= 5.8.3)
+  rake (~> 10.5)
+  yard (= 0.8.7.6)
+
+BUNDLED WITH
+   1.11.2
