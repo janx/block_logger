@@ -2,7 +2,7 @@ require 'logging'
 
 class BlockLogger
 
-  VERSION = '0.1.0'
+  VERSION = '0.1.1'
 
   DEFAULT_LOG_LEVEL = :info
   DEFAULT_LOG_PATTERN = "%.1l, [%d] %5l -- %c: %m\n".freeze
@@ -23,6 +23,14 @@ class BlockLogger
 
     def traces
       @traces ||= {}
+    end
+
+    def level
+      Logging.logger.root.level
+    end
+
+    def level=(level)
+      Logging.logger.root.level = level
     end
   end
 
