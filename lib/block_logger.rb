@@ -2,7 +2,7 @@ require 'logging'
 
 class BlockLogger
 
-  VERSION = '0.1.1'
+  VERSION = '0.1.2'
 
   DEFAULT_LOG_LEVEL = :info
   DEFAULT_LOG_PATTERN = "%.1l, [%d] %5l -- %c: %m\n".freeze
@@ -45,6 +45,14 @@ class BlockLogger
     if self.class.trace?(name)
       @logger.info "TRACE #{msg}#{serialize_kwargs(kwargs)}"
     end
+  end
+
+  def level
+    @logger.level
+  end
+
+  def level=(l)
+    @logger.level = l
   end
 
   def fatal(msg, **kwargs)

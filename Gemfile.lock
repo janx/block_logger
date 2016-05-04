@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    block_logger (0.1.1)
+    block_logger (0.1.2)
       logging (~> 2.0)
 
 GEM
