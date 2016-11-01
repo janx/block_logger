@@ -47,6 +47,10 @@ class BlockLogger
     end
   end
 
+  def trace?
+    self.class.trace?(name)
+  end
+
   def level
     @logger.level
   end
