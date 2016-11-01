@@ -2,7 +2,7 @@ require 'logging'
 
 class BlockLogger
 
-  VERSION = '0.1.2'
+  VERSION = '0.1.3'
 
   DEFAULT_LOG_LEVEL = :info
   DEFAULT_LOG_PATTERN = "%.1l, [%d] %5l -- %c: %m\n".freeze
